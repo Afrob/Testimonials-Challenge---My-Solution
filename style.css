@@ -1,0 +1,116 @@
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding: 20px;
+    padding-top: 50px;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.profile-photo{
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 2px hsla(210, 46%, 95%, 50%) solid;
+}
+
+.bright-text{
+    color: hsl(0, 0%, 100%);
+}
+
+.dark-text{
+    color: hsl(217, 19%, 35%);
+}
+
+.name, .title{
+    margin: 1px;
+}
+
+.title{
+    opacity: 50%;
+}
+
+.quote{
+    opacity: 70%;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.box{
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.personal-container{
+    display: flex;
+    align-items: center;
+}
+
+.name-and-title-box{
+    display: flex;
+    flex-direction: column;
+}
+
+#box1 {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+
+#box2{
+    background-color: hsl(217, 19%, 35%);
+}
+
+#box3{
+    background-color: hsl(0, 0%, 100%);
+}
+
+#box4{
+    background-color: hsl(219, 29%, 14%);
+}
+
+#box5{
+    background-color: hsl(0, 0%, 100%);
+}
+
+#quotation-svg {
+    width: 104px;
+    height: 102px;
+}
+
+@media (min-width:768px){
+    .box{
+        margin-right:20px
+    }
+    .container{
+        flex-direction: row;
+    }
+
+    .inner-container {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 66.66%;
+    }
+    .top-container{
+        display: flex;
+        height: 50%;
+    }
+
+    .bottom-container{
+        display: flex;
+        height: 50%;
+    }
+
+    #box5 {
+        flex-basis: 33.34%;
+    }
+    
+}
