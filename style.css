@@ -81,11 +81,6 @@ body {
     background-color: hsl(0, 0%, 100%);
 }
 
-#quotation-svg {
-    width: 104px;
-    height: 102px;
-}
-
 @media (min-width:768px){
     .box{
         margin-right:20px
@@ -97,20 +92,19 @@ body {
     .inner-container {
         display: flex;
         flex-direction: column;
-        flex-basis: 66.66%;
+        flex-basis: 80%;
     }
     .top-container{
         display: flex;
-        height: 50%;
+        flex-basis: 50%;
     }
 
     .bottom-container{
         display: flex;
-        height: 50%;
+        flex-basis: 50%;
     }
 
     #box5 {
-        flex-basis: 33.34%;
+        flex-basis: 20%;
     }
-    
 }
